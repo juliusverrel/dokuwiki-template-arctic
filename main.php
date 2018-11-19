@@ -134,7 +134,13 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     <?php tpl_includeFile('pageheader.html') ?>
 
     <?php flush()?>
-
+   
+    <?php
+      //Starred
+      $starred = plugin_load('action','starred');
+      if ($starred) $starred->tpl_starred();
+     ?>
+    
     <?php if(tpl_getConf('sidebar') == 'left') { ?>
 
       <?php if(!arctic_tpl_sidebar_hide()) { ?>
