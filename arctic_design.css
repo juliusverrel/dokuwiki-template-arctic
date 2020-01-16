@@ -211,7 +211,7 @@ div.dokuwiki pre.file {
   width: auto !important;
   width: 98%;
   font-size: 100%;
-  max-height: 400px;
+  max-height: 300px;
 }
 
 /* Footnotes fix for IE7 */
